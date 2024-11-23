@@ -67,7 +67,7 @@ For the social icons, you can use a font icon library. Some suggestions can be f
  
 
 
-  Ready To Build Your Community?
+ 
   Get Started For Free
 
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
