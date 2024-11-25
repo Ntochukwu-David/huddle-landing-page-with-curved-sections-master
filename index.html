@@ -56,6 +56,14 @@
       font-size:16px;
       line-height:50px;
     }
+    #div-logo{
+      display:flex;
+      padding-left:25px;
+    }
+    #div-tryout{
+      display:flex;
+      padding-right:25px;
+    }
     h3{
       font-weight:700;
       font-family:"poppins" sans-serif;
@@ -64,8 +72,20 @@
       padding:100px;
       padding-bottom:0px;
     }
+    #container1{
+      display:flex;
+      justify-content:space-between;
+    }
     #para-2{
       padding:0px 100px 100px 100px;
+    }
+    #image-flow{
+      width:500px;
+      padding:30px;
+    }
+    #image-grow{
+      width:500px;
+      padding:30px;
     }
     #subscribe{
       cursor:pointer;
@@ -130,7 +150,6 @@
     #div-messages{
       width:60%;
       display:flex;
-      height:80px;
       flex-direction:column;
       margin-right:50px;
     }
@@ -140,22 +159,84 @@
       margin-top:40px;
       flex-direction:column;
     }
+    #container2{
+      display:flex;
+      background-color:hsl(207, 100%, 98%);
+    }
+    #container22{width:50%;}
+
+
+    @media(max-width:900px){
+      #para-2{
+        padding:0px 50px 50px 50px;
+      }
+    }
+    @media(max-width:890px){
+      #para-2{
+        padding:0px 50px 50px 50px;
+      }
+      #image-flow{
+      width:400px;
+      padding:10px;
+      }
+    }
+    @media(max-width:818px){
+      #image-grow{
+      width:400px;
+      padding:10px;
+    }
+    }
+    @media(max-width:800px){
+      #container1{
+      display:flex;
+      flex-direction:column;
+      }
+      #div-communities{
+      width:100%;
+      display:flex;
+      margin-top:0px;
+      }
+      #div-messages{
+      width:100%;
+      display:flex;
+      margin-right:0px;
+      }
+    #container2{
+      display:flex;
+      background-color:hsl(207, 100%, 98%);
+      flex-direction:column-reverse;
+      }
+      #container22{width:100%;
+        text-align:center;
+      }
+      h3{
+      margin-top:10px;
+      padding:0px;
+      }
+      #para-2{
+        padding:0px 20px 20px 20px;
+      }
+    }
+    
+   
   </style>
 </head>
 <body>
   <div id="main">
     <div style="width:100%;display:flex;justify-content:space-between;margin-top:30px;">
-      <div style="display:flex;padding-left:25px;"> <img src="./images/logo.svg"alt="Logo" 
+      <div id="div-logo"> <img src="./images/logo.svg"alt="Logo" 
         style="height:25px;"> 
       </div>
-      <div style="display:flex;padding-right:25px;"> <button id="button1">try it free</button>
+      <div id="div-tryout"> <button id="button1">try it free</button>
       </div>
     </div>
-    <h2> Build The Community Your Fans Will Love </h2>
+    <div>
+      <h2> Build The Community Your Fans Will Love </h2>
 
-    <p id="para-1">  Huddle re-imagines the way we build communities. You have a <br> voice, but so does 
+      <p id="para-1">  Huddle re-imagines the way we build communities. You have a <br> voice, but so does 
       your audience. Create connections with your <br> users as you engage in genuine discussion.
-    </p>
+      </p>
+    </div>
 
     <center>
       <a href="#"><button  id="button2">Get Started For Free</button></a>
@@ -168,7 +249,7 @@
     </div>
 
     <center>
-      <div style="display:flex;justify-content:space-between;">
+      <div id="container1">
         <div id="div-communities">
           <div>
             <img src="./images/icon-communities.svg" alt="communities" id="icon-communities">
@@ -190,8 +271,8 @@
     </center>
     <div>
       <img src="./images/bg-section-top-desktop-1.svg" alt="" style="color:hsl(207, 100%, 98%);width:100%;">
-      <div style="display:flex;background-color:hsl(207, 100%, 98%);">
-        <div style="width:50%;">
+      <div id="container2">
+        <div id="container22">
           <h3> Grow Together</h3>
           <p id="para-2">Generate meaningful discussions with your audience and build a <br>strong, loyal community. 
             Think of the insightful conversations you <br> miss out on with a feedback form. 
@@ -199,7 +280,9 @@
         </div>
 
         <div>
-          <img src="./images/illustration-grow-together.svg" alt="" style="width:500px;padding:30px;">
+          <center>
+            <img src="./images/illustration-grow-together.svg" alt="" id="image-grow">
+          </center>
         </div>
       </div>
 
@@ -210,7 +293,7 @@
     <div>
       <div style="display:flex;">
         <div>
-          <img src="./images/illustration-flowing-conversation.svg" alt="" style="width:500px;padding:30px;">
+          <img src="./images/illustration-flowing-conversation.svg" alt="" id="image-flow">
         </div>
 
         <div style="width:50%;">
