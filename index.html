@@ -9,7 +9,7 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Carter+One&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Karla:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Playwrite+AU+NSW:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-    #main{background-color: rgb(197, 191, 191);width:100%;}
+    #main{width:100%;margin:auto;}
     #button1{background-color:white;border:2px solid hsl(322, 100%, 66%);width:100px;border-radius:10px;color:hsl(322, 100%, 66%);cursor:pointer;}
     #button1:hover{color:hsl(321, 100%, 78%);border:2px solid hsl(321, 100%, 78%);}
     h2{font-family:"poppins" sans-serif;font-weight:700;text-align:center;margin-top:100px;}
@@ -20,6 +20,11 @@
     span{font-size:16px;line-height:50px;}
     h3{font-weight:700;font-family:"poppins" sans-serif;font-size:20px;margin-top:100px;padding:100px;padding-bottom:0px;}
     #para-2{padding:0px 100px 100px 100px;}
+    #subscribe{cursor:pointer;background-color:hsl(322, 100%, 66%);color:white;border:none;border-radius:5px;height:30px;width:120px;}
+    #subscribe:hover{background-color:hsl(321, 100%, 78%);}
+    #email{border:none;border-radius:5px;height:30px;width:200px;cursor:pointer;margin:30px;margin-top:0px;}
+    #para-3{color:white;padding:30px;padding-top:0px;font-size:14px;}
+    h4{font-family:"poppins"sans-serif;color:white;font-weight:600;font-size:20px;margin-left:30px;margin-top:100px;}
   </style>
 </head>
 <body>
@@ -108,6 +113,21 @@
       <a href="#"><button  id="button2" style="margin-bottom:100px;">Get Started For Free</button></a>
     </center>
     <img src="./images/bg-footer-top-desktop.svg" alt="" style="width:100%;">
+    <div style="background-color:hsl(192, 100%, 9%);width:100%;height:400px;display:flex;">
+      <div style="width:50%;height:200px;">
+        <img src="./images/logo copy.svg" alt="logo" style="width:120px;margin-top:90px;padding-left:30px;">
+      </div>
+      <div style="width:50%;">
+        <h4> Newsletter</h4>
+        <p id="para-3"> To recieve tips on how to grow your community,<br> sign up to our weekly newsletter. We’ll never 
+          send<br> you spam or pass on your email address</p>
+        <form>
+          <label for="email"></label>
+          <input type="email" id="email" name="email">
+          <input type="button" value="Subscribe" id="subscribe">
+        </form>
+      </div>
+    </div>
   </div>
 
   <footer> 
