@@ -50,7 +50,7 @@
       font-size:45px;
       font-weight: 800;
       line-height:0%;
-      margin-top:25%;
+    
     }
     span{
       font-size:16px;
@@ -114,6 +114,32 @@
     .fab {
             font-size: 30px;
         }
+    #image-mockups{
+      height:440px;
+      margin:auto;
+      margin-top:30px;
+    }
+    #icon-communities{
+      width:30px;
+      margin-left:0%;
+    }
+    #icon-messages{
+      width:30px;
+      margin-top:40px;
+    }
+    #div-messages{
+      width:60%;
+      display:flex;
+      height:80px;
+      flex-direction:column;
+      margin-right:50px;
+    }
+    #div-communities{
+      width:60%;
+      display:flex;
+      margin-top:40px;
+      flex-direction:column;
+    }
   </style>
 </head>
 <body>
@@ -134,33 +160,31 @@
 
     <div>
       <center>
-        <img src="./images/screen-mockups.svg" alt="screen-mockups" style="height:440px;margin:auto;margin-top:30px;">
+        <img src="./images/screen-mockups.svg" alt="screen-mockups" id="image-mockups">
       </center>
     </div>
 
     <center>
-      <div style="width:60%;display:flex;justify-content:space-between;margin-top:40px;">
-        <div style="padding-left:30px;">
-          <img src="./images/icon-communities.svg" alt="communities" style="width:30px;margin-left:0%;">
+      <div style="display:flex;justify-content:space-between;">
+        <div id="div-communities">
+          <div>
+            <img src="./images/icon-communities.svg" alt="communities" id="icon-communities">
+          </div>
+          <div>
+            <p id="account"> 1.4k+ <br> <span style="padding-left:20px;">Communities Formed</span></p>
+          </div>
+        
         </div>
-
-        <div style="padding-right:80px;">
-          <img src="./images/icon-messages.svg" alt="icon-messages" style="width:30px;">
+        <div id="div-messages">
+          <div style="padding-right:80px;">
+            <img src="./images/icon-messages.svg" alt="icon-messages" id="icon-messages">
+          </div>
+          <div>
+            <p  id="account"> 2.7m+ <br> <span> Messages Sent</span></p>
+          </div>
         </div>
       </div>
     </center>
-
-    <center>
-      <div style="width:60%;display:flex;justify-content:space-between;height:80px;">
-        <div>
-          <p id="account" style="margin-top:20%;"> 1.4k+ <br> <span style="padding-left:20px;">Communities Formed</span></p>
-        </div>
-        <div>
-          <p  id="account"> 2.7m+ <br> <span> Messages Sent</span></p>
-        </div>
-      </div>
-    </center>
-
     <div>
       <img src="./images/bg-section-top-desktop-1.svg" alt="" style="color:hsl(207, 100%, 98%);width:100%;">
       <div style="display:flex;background-color:hsl(207, 100%, 98%);">
