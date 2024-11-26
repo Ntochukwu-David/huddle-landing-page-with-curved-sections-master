@@ -134,6 +134,10 @@
     .fab {
             font-size: 30px;
         }
+    #image-user{
+      width:500px;
+      padding:30px;
+    }
     #image-mockups{
       height:440px;
       margin:auto;
@@ -164,6 +168,19 @@
       background-color:hsl(207, 100%, 98%);
     }
     #container22{width:50%;}
+    #container3{display:flex;}
+    #container33{width:50%;}
+    #container4{
+      display:flex;
+      background-color:hsl(207, 100%, 98%);
+    }
+    #container44{width:50%;}
+    #footer{
+      background-color:hsl(192, 100%, 9%);
+      width:100%;
+      display:flex;
+      height:500px;
+    }
 
 
     @media(max-width:900px){
@@ -176,13 +193,13 @@
         padding:0px 50px 50px 50px;
       }
       #image-flow{
-      width:400px;
+      width:300px;
       padding:10px;
       }
     }
     @media(max-width:818px){
       #image-grow{
-      width:400px;
+      width:300px;
       padding:10px;
     }
     }
@@ -215,6 +232,37 @@
       }
       #para-2{
         padding:0px 20px 20px 20px;
+      }
+      #container3{display:flex;
+        flex-direction:column;
+      }
+      #container33{width:100%;
+        text-align:center;
+      }
+      #container4{
+      display:flex;
+      flex-direction:column-reverse;
+      }
+      #container44{width:100%;
+        text-align:center;
+      }
+      #image-user{
+      width:300px;
+      padding:20px;
+      }
+      #image-mockups{
+      height:250px;
+      }
+      #footer{
+      display:flex;
+      height:800px;
+      flex-direction:column-reverse;
+      }
+      #div-logo{
+      padding-left:10px;
+      }
+    #div-tryout{
+      padding-right:10px;
       }
     }
     
@@ -291,12 +339,14 @@
     </div>
 
     <div>
-      <div style="display:flex;">
+      <div id="container3">
         <div>
-          <img src="./images/illustration-flowing-conversation.svg" alt="" id="image-flow">
+          <center>
+            <img src="./images/illustration-flowing-conversation.svg" alt="" id="image-flow">
+          </center>
         </div>
 
-        <div style="width:50%;">
+        <div id="container33">
           <h3> Flowing Conversations</h3>
           <p id="para-2"> You wouldn't paginate a conversation in real life, so why do it online?<br>
           Our threads have just-in-time loading for a more natural flow.
@@ -307,15 +357,17 @@
 
     <div>
       <img src="./images/bg-section-top-desktop-2.svg" alt="" style="color:hsl(207, 100%, 98%);width:100%;">
-      <div style="display:flex;background-color:hsl(207, 100%, 98%);">
-        <div style="width:50%;">
+      <div id="container4">
+        <div id="container44">
           <h3>  Your Users</h3>
           <p id="para-2"> It takes no time at all to integrate Huddle with your app's <br>authentication solution. This means, once signed
             in to your app, your<br> users can start chatting immediately. 
           </p>
         </div>
         <div>
-          <img src="./images/illustration-your-users.svg" alt="" style="width:500px;padding:30px;">
+          <center>
+            <img src="./images/illustration-your-users.svg" alt="" id="image-user">
+          </center>
         </div>
       </div>
         <img src="./images/bg-section-bottom-desktop-2.svg" alt="" style="color:hsl(207, 100%, 98%);width:100%;">
@@ -328,7 +380,7 @@
     </center>
 
     <img src="./images/bg-footer-top-desktop.svg" alt="" style="width:100%;">
-    <div style="background-color:hsl(192, 100%, 9%);width:100%;display:flex;height:500px;">
+    <div id="footer">
       <div style="width:50%;height:200px;">
         <img src="./images/logo copy.svg" alt="logo" style="width:120px;margin-top:100px;padding-left:30px;">
         <p id="para-3" style="padding-bottom:0px;">
